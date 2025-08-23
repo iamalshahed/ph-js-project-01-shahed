@@ -1,2 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 @import "tailwindcss";
-@plugin "daisyui";
+/* @plugin "daisyui"; */
+
+@theme {
+  --font-bodyFont: "Manrope", sans-serif;
+}
+
+@layer base {
+  ::selection{
+    @apply bg-black/80 text-white;
+  }
+
+  body {
+    @apply bg-gray-100 text-black font-bodyFont;
+  }
+
+  img{
+    user-select: none;
+    pointer-events: none
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  .p__center {
+    @apply flex items-center justify-center min-h-screen p-4;
+  }
+
+  .input {
+    @apply py-4 px-7 bg-gray-200 rounded-[30px] outline-none border-none text-zinc-950 text-base font-light w-full;
+  }
+
+  .btn__login {
+    @apply p-4 w-full bg-[#848484] text-[#fcfcfc] text-center text-base font-medium rounded-full cursor-pointer disabled:cursor-not-allowed;
+  }
+
+  /* if button id not disabled */
+  .login__btn__active {
+    @apply bg-black text-white transition-all duration-200 ease-in-out hover:bg-black/85;
+  }
+}

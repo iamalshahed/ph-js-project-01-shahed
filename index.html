@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payooo Mobile Bank</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- -- 
      tailwind css 
@@ -12,7 +14,37 @@
 </head>
 <body>
 
-    <button class="btn btn-secondary">Login to my account</button>
+    <main class="p__center">
+
+        <div class="max-w-96 w-full">
+            <!-- logo -->
+            <div class="">
+                <img src="/logo.png" alt="logo" class="w-6 mx-auto mb-7">
+            </div>
+
+            <form action="#">
+                <!-- input box -->
+                <div class="flex flex-col items-start justify-start gap-3 mb-4">
+                    <label for="mobile__number" class="text-zinc-950 text-base font-medium">Mobile Number</label>
+                    <input class="input" type="number" name="mobile__number" id="mobile__number" placeholder="Enter your number" required>
+                </div>
+
+                <!-- input box -->
+                <div class="flex flex-col items-start justify-start gap-3 mb-4">
+                    <label for="digit" class="text-zinc-950 text-base font-medium">4 Digit Pin</label>
+                    <input class="input" type="number" name="digit" id="digit" placeholder="Enter 4 Digit Pin" required>
+                </div>
+
+                <div class="">
+                    <button class="btn__login" id="btn__login" disabled>Login</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- script file -->
+    <script type="module" src="./src/main.js"></script>
     
 </body>
 </html>
