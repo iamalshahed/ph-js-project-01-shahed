@@ -49,4 +49,9 @@
   .login__btn__active {
     @apply bg-black text-white transition-all duration-200 ease-in-out hover:bg-black/85;
   }
+
+  /* category card */
+  .card__category {
+    @apply flex flex-col items-center justify-center gap-2 px-2.5 py-5 rounded-xl outline-1 outline-offset-[-1px] outline-zinc-950/10 cursor-pointer hover:bg-gray-100;
+  }
 }
