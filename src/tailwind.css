@@ -21,10 +21,23 @@
     pointer-events: none;
   }
 
+  /* for input */
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+
+  /* for select */
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+
+  select option {
+    @apply text-zinc-950 text-base font-light;
   }
 }
 
@@ -39,6 +52,10 @@
 
   .btn__login {
     @apply p-4 w-full bg-[#848484] text-[#fcfcfc] text-center text-base font-medium rounded-full cursor-pointer disabled:cursor-not-allowed;
+  }
+
+  .btn__add__money {
+    @apply p-4 w-full bg-black text-white text-center text-base font-medium rounded-full cursor-pointer transition-all duration-200 ease-in-out hover:bg-black/85;
   }
 
   .btn__logout {
