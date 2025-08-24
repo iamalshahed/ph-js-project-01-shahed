@@ -8,7 +8,7 @@
 }
 
 @layer base {
-  ::selection{
+  ::selection {
     @apply bg-black/80 text-white;
   }
 
@@ -16,9 +16,9 @@
     @apply bg-gray-100 text-black font-bodyFont;
   }
 
-  img{
+  img {
     user-select: none;
-    pointer-events: none
+    pointer-events: none;
   }
 
   input::-webkit-outer-spin-button,
@@ -39,6 +39,10 @@
 
   .btn__login {
     @apply p-4 w-full bg-[#848484] text-[#fcfcfc] text-center text-base font-medium rounded-full cursor-pointer disabled:cursor-not-allowed;
+  }
+
+  .btn__logout {
+    @apply flex items-center gap-2 px-3 py-2 rounded-lg outline-1 outline-offset-[-1px] outline-zinc-950/10 cursor-pointer text-zinc-950/50 text-sm font-normal hover:bg-gray-100;
   }
 
   /* if button id not disabled */

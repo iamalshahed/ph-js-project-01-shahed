@@ -1,5 +1,3 @@
-import "remixicon/fonts/remixicon.css";
-
 // fixed value
 const ourNumber = 12345678911;
 const ourDigit = 1234;
