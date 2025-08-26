@@ -36,7 +36,7 @@ btnLogin.addEventListener("click", function (e) {
       */
 
       // ridirect to dashboard page
-      window.location.href = "./pages/dashboard.html";
+      window.location.href = "./src/pages/dashboard.html";
     } else {
       alert("⚠️ Mobile number not matched 🙂📞");
     }
